@@ -12,3 +12,25 @@ https://blog.csdn.net/sinat_37011812/article/details/79965957
 
 自己蠢如猪
 
+1.
+在服务器添加完公钥之后，ssh服务器然后报了这个错误
+
+sign_and_send_pubkey: signing failed: agent refused operation
+
+然后执行了以下命令才好。。
+
+eval "$(ssh-agent -s)"
+ssh-add
+
+-----------------
+2.  git push origin HEAD:refs/for/master
+
+
+To git@github.com:wangjinbo75/log.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: 无法推送一些引用到 'git@github.com:wangjinbo75/log.git'
+提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
+提示：再次推送前，先与远程变更合并（如 'git pull ...'）。详见
+提示：'git push --help' 中的 'Note about fast-forwards' 小节。
+
+
