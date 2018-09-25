@@ -12,15 +12,23 @@ https://blog.csdn.net/sinat_37011812/article/details/79965957
 
 自己蠢如猪
 
-1.
+1.	eval "$(ssh-agent -s)"
+	ssh-add
 在服务器添加完公钥之后，ssh服务器然后报了这个错误
 
 sign_and_send_pubkey: signing failed: agent refused operation
 
 然后执行了以下命令才好。。
 
-eval "$(ssh-agent -s)"
-ssh-add
+sign_and_send_pubkey: signing failed: agent refused operation
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
 
 -----------------
 2.  git push origin HEAD:refs/for/master
