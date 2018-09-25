@@ -28,6 +28,8 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 
+
+
 -----------------
 2.  git push origin HEAD:refs/for/master
 
@@ -42,7 +44,6 @@ error: 无法推送一些引用到 'git@github.com:wangjinbo75/log.git'
 3.
 git status
 git add .
-git status
 git commit  -m "13"
-git push origin master 
+
 
