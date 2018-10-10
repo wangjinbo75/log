@@ -45,5 +45,33 @@ error: 无法推送一些引用到 'git@github.com:wangjinbo75/log.git'
 git status
 git add .
 git commit  -m "13"
+git remote add origin git@github.com:wangjinbo75/Building_Maps_and_navigating.git
+git push -u origin master
+
+4.
+
+ git commit -a
+位于分支 master
+您的分支与上游分支 'origin/master' 一致。
+无文件要提交，干净的工作区
+ 
+5.  rm -f ./.git/index.lock 
+If no other git process is currently running, this probably means a
+git process crashed in this repository earlier. Make sure no other git
+process is running and remove the file manually to continue.
+
+
+6. git commit -m  " " 
+位于分支 master 要提交的变更：   （使用 "git reset HEAD <文件>..." 以取消暂存）
+
+
+7.git push origin +master
+
+To git@github.com:wangjinbo75/Building_Maps_and_navigating.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: 无法推送一些引用到 'git@github.com:wangjinbo75/Building_Maps_and_navigating.git'
+提示：更新被拒绝，因为您当前分支的最新提交落后于其对应的远程分支。
+提示：再次推送前，先与远程变更合并（如 'git pull ...'）。详见
+提示：'git push --help' 中的 'Note about fast-forwards' 小节。
 
 
