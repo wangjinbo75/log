@@ -28,6 +28,25 @@ Please make sure you have the correct access rights
 and the repository exists.
 
 
+首先，清除所有的key-pair
+ssh-add -D
+rm -r ~/.ssh
+删除你在github中的public-key
+
+
+重新生成ssh密钥对
+ssh-keygen -t rsa -C "xxx@xxx.com"
+chmod 0700 ~/.ssh
+chmod 0600 ~/.ssh/id_rsa*
+
+
+接下来正常操作
+在github上添加公钥public-key:
+1、首先在你的终端运行 xclip -sel c ~/.ssh/id_rsa.pub将公钥内容复制到剪切板
+2、在github上添加公钥时，直接复制即可
+3、保存
+
+https://blog.csdn.net/laner415/article/details/52966890
 
 
 -----------------

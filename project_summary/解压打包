@@ -1,0 +1,2 @@
+tar -cf 气体检验.file Serial 
+gzip 气体检验.file

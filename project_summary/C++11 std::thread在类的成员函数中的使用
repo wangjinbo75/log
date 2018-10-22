@@ -3,3 +3,4 @@ https://blog.csdn.net/shreck66/article/details/50409874
 
 C++类的成员函数的函数指针不能直接做为参数传到pthread_create,主要因为是C++成员函数指针带有类命名空间，同时成员函数末尾是会被C++编译器加上可以接收对象地址的this指针参数。因此需要将成员函数做一定的转化，将其转化为不被编译器加上this指针，而由我们自己来为该函数维护”this”指针即可
 
+https://yq.aliyun.com/articles/584964
