@@ -1,7 +1,8 @@
 使用new关键字分配 Wid * Hei * 3 个unsigned char类型的内存。
 
-char * p = new cha          [10];                                                                                                                                                                        
-          printf("sizeof(p) = %lu \n",sizeof(p) );
-          delete [] p;
+char * p = new cha     r[10];                                                                                                                                                                        
+          
+printf("sizeof(p) = %lu \n",sizeof(p) );
+delete [] p;
 
 

@@ -1,0 +1,15 @@
+http://www.twinklingstar.cn/2016/2772/orientation/ 
+视觉抓取
+1.
+Ur机械臂的视教板上末端点的坐标是用六个值[x, y, z, rx, ry, rz]表示的。
+前三个值[x, y, z]是三维笛卡尔坐标，表示空间位置，
+后三个值[rx, ry, rz]是坐标旋转向量，表示空间姿态。
+
+
+抓取怎么能有反馈 
+或者说 能
+更新的，执行函数 在while（ ros::ok() ）吗？  
+
+double roll, pitch, yaw;
+tf::Matrix3x3 m(tf::Quaternion(pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w));
+m.getRPY(roll, pitch, yaw);
