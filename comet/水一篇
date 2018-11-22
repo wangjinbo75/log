@@ -1,0 +1,29 @@
+blog:    https://xymeow.github.io/post/robotic-grasping-based-on-deep-learning/ 
+
+
+1.	深度学习和大规模数据采集对机器人抓取的手眼协调
+	Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection
+
+	https://arxiv.org/pdf/1603.02199v4.pdf  
+	https://people.eecs.berkeley.edu/~svlevine/papers/grasp_iser.pdf
+
+2.	机器人闭环抓取: 一种实时、生成的抓取合成方法	
+	Closing the Loop for Robotic Grasping: A Real-time, Generative Grasp Synthesis Approach
+	https://eurekalert.org/pub_releases/2018-06/quot-ctl062418.php
+	https://arxiv.org/pdf/1804.05172.pdf 
+
+	
+3.	用视觉机器人掌握新物体
+	Robotic Grasping of Novel Objects using Vision
+	http://pr.cs.cornell.edu/grasping/IJRR_saxena_etal_roboticgraspingofnovelobjects.pdf
+
+4. 	深度学习检测机械臂抓取
+	Deep Learning for Detecting Robotic Grasps
+        https://arxiv.org/pdf/1301.3592.pdf
+	Cornell大学提出了一种基于深度学习的机器人抓取系统paper 。抓取任务可以看作是一种目标检测问题，但不同于一般目标检测的是，
+	这里的目的是找出一个使得抓取目标物体成功率最大的最优抓取 (optimal grasp)。在之前的抓取系统中，对目标定位需要手工设定目标的特征，
+	十分繁琐，鲁棒性也不高。这个系统利用深度学习的方法自动提取目标的特征，并输出一个抓取矩形 (grasping rectangle) 表示抓取的位置，
+	省去了手工设置特征这一繁琐步骤。
+
+
+
