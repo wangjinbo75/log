@@ -1,0 +1,38 @@
+1. 拿到logitech摄像头 ，可以输入 guvcview 看到视频
+2. 但是需要  看到 /camera/image_raw
+
+	UVC只是一个驱动，如果它能成功驱动摄像头，会在/dev目录下出现video(或video0、video1等等)。
+	这样，就可以使用Linux提供(准确说不是Linux提供，具体的百度吧)的一套API，即V4L2来访问摄像头了。
+	“使用”是指我们写的采集数据的程序，而不是指“摄像头驱动程序”。——驱动程序不是那么简单就能写出来的
+
+	V4L是Linux环境下开发视频采集设备驱动程序的一套规范(API)，它为驱动程序的编写提供统一的接口
+
+	RGB是一种颜色的表示法，计算机中一般采用24位来存储，每个颜色占8位。YUV也是一种颜色空间，
+	为什么要出现YUV,主要有两个原因，一个是为了让彩色信号兼容黑白电视机，另外一个原因是为了减少传输的带宽。
+
+3. bx
+   nodelet 可以直接转移读取 不需要内存
+   rosrun youibot_camera camera_info 
+ 
+5.
+	v4l2-ctl --list-formats-ext
+
+	v4l2-ctl --list-formats
+
+	v4l2-ctl --set-fmt-video=width=1920,height=1080,pixelformat=1
+
+	v4l2-ctl --set-parm=30
+
+	vlc v4l2:///dev/video0:chroma=h264 --aspect-ratio 16:9
+
+6. bmp 读取照片 读的好累  有些骨头就是难啃
+      这里不直接写fwrite(&bf,sizeof(bf),1,file);原因，
+      因为结构体对齐原因，其实第一个bf.bftype并不是占用两个字节，而是4个字节，sizeof
+      就是16了，显然不对，bmp固定文件头为14个字节。故按如下方式处理。
+      
+      /*声明数组，存储yuyv数据和rgb数据*/
+     /*因已知格式为yuyv，640*480.这里就直接声明两个数组，分别为640*480*2 和 640*480*3大小*/
+
+     1. 灰度图像的话，缓冲区大小就是width*height.
+
+     2. RGB图像的话，缓冲区大小是width*height*3，同时，像素排列顺序是RGB RGB RGB RGB…
