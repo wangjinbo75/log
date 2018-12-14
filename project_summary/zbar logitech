@@ -36,3 +36,8 @@
      1. 灰度图像的话，缓冲区大小就是width*height.
 
      2. RGB图像的话，缓冲区大小是width*height*3，同时，像素排列顺序是RGB RGB RGB RGB…
+
+6. zbar 
+  安装 ImageMagick
+  sudo  apt-get install imagemagick
+  源码 ：http://sourcedigit.com/19826-install-imagemagick-image-editor-converter-ubuntu-16-04/

@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/youibot/catkin_ws/devel/include",
+                "/opt/ros/kinetic/include",
+                "/home/youibot/catkin_ws/src/navigation/amcl/include",
+                "/home/youibot/catkin_ws/src/navigation/base_local_planner/include",
+                "/home/youibot/catkin_ws/src/beginner_tutorials/include",
+                "/home/youibot/catkin_ws/src/navigation/carrot_planner/include",
+                "/home/youibot/catkin_ws/src/navigation/clear_costmap_recovery/include",
+                "/home/youibot/catkin_ws/src/navigation/costmap_2d/include",
+                "/home/youibot/catkin_ws/src/navigation/dwa_local_planner/include",
+                "/home/youibot/catkin_ws/src/navigation/global_planner/include",
+                "/home/youibot/catkin_ws/src/motion_control/include",
+                "/home/youibot/catkin_ws/src/laser_line_extraction/include",
+                "/home/youibot/catkin_ws/src/navigation/map_server/include",
+                "/home/youibot/catkin_ws/src/navigation/move_base/include",
+                "/home/youibot/catkin_ws/src/navigation/move_slow_and_clear/include",
+                "/home/youibot/catkin_ws/src/navigation/nav_core/include",
+                "/home/youibot/catkin_ws/src/navigation/navfn/include",
+                "/home/youibot/catkin_ws/src/node_example/include",
+                "/home/youibot/catkin_ws/src/openslam_gmapping/include",
+                "/home/youibot/catkin_ws/src/robot_camera/include",
+                "/home/youibot/catkin_ws/src/robot_qrlocation/include",
+                "/home/youibot/catkin_ws/src/robot_tyre/include",
+                "/home/youibot/catkin_ws/src/robotics/include",
+                "/home/youibot/catkin_ws/src/navigation/rotate_recovery/include",
+                "/home/youibot/catkin_ws/src/turtlebot3_simulations/turtlebot3_fake/include",
+                "/home/youibot/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo/include",
+                "/home/youibot/catkin_ws/src/turtlebot3/turtlebot3_slam/include",
+                "/home/youibot/catkin_ws/src/velodyne/velodyne_driver/include",
+                "/home/youibot/catkin_ws/src/velodyne/velodyne_laserscan/include",
+                "/home/youibot/catkin_ws/src/velodyne/velodyne_pointcloud/include",
+                "/home/youibot/catkin_ws/src/navigation/voxel_grid/include",
+                "/home/youibot/catkin_ws/src/yocs_velocity_smoother/include",
+                "/home/youibot/catkin_ws/src/zbar_ros/include",
+                "/usr/include"
+            ],
+            "name": "Linux",
+            "intelliSenseMode": "clang-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
